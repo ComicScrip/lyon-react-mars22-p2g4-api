@@ -9,11 +9,11 @@ app.use(express.json());
 
 app.get('/api/paths', async (req, res) => {
   const { name } = req.query;
-  let sql = 'SELECT * FROM products';
+  let sql = 'SELECT * FROM path';
   const valuesToEscape = [];
   if (name) {
-    sql += ' WHERE name LIKE %?%';
-    valuesToEscape.push(name);
+    sql += ' WHERE name LIKE ?';
+    valuesToEscape.push(`%${name}%`);
   }
 
   try {
