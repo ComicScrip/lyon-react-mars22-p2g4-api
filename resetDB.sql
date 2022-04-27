@@ -7,14 +7,14 @@ CREATE TABLE `path` (
  `start_lat` DECIMAL(18, 15),
  `start_lon` DECIMAL(18, 15),
  `difficulty` INT,
- `lenght` DECIMAL(10, 2),
+ `length` DECIMAL(10, 2),
  `elevation` INT,
  `description` TEXT,
  `trace` JSON NOT NULL,
  PRIMARY KEY (`id`)
 );
 
-INSERT INTO `path` (name, city_location, start_lat, start_lon, difficulty, lenght, elevation, description, trace)
+INSERT INTO `path` (name, city_location, start_lat, start_lon, difficulty, length, elevation, description, trace)
 VALUES ("Lyon, tour de la presqu'ile", 'Lyon', 45.75785262972116, 4.833769798278809, 3, 12, 100, "Ce parcours vous fera faire le tour du centre de Lyon en passant par les quaies, le quartier de confluence, le vieux lyon, ainsi que la presqu'ile. Le parfait parcours pour découvrir la capitale des gaulles.", '{
   "type": "FeatureCollection",
   "features": [
