@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ComicScrip/express-minimal-template#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.1",
     "jest": "^27.5.1",
