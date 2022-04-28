@@ -1,7 +1,9 @@
 const express = require('express');
 const db = require('./db');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 
 app.get('/api', (req, res) => res.send('Welcome to the Pic&Move API'));
 
