@@ -41,8 +41,4 @@ app.get('/api/paths/:id', async (req, res) => {
   }
 });
 
-db.connect((err) => {
-  if (err) console.error('Error connecting to database');
-});
-
 module.exports.app = app;
